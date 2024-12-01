@@ -117,6 +117,7 @@ ol {
   margin-top: 64px;
   min-width: 169px;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .main-button:hover {
@@ -396,6 +397,8 @@ footer .container .logo-full {
 .our-team-list {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 
 .staff {
@@ -420,7 +423,7 @@ footer .container .logo-full {
 
 }
 
-svg {
+.second-list-title svg {
   border: 1px solid #8e8f99;
 border-radius: 4px;
 width: 264px;
@@ -436,4 +439,82 @@ padding: 24px 100px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-links svg {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+
+.social-links a:hover {
+  background-color: #31d0aa;
+}
+
+header {
+  position: sticky;
+  top: -1px;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+footer .social-links li svg {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+footer .social-media a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.footer-media p{
+  font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+ color: #fff;
+  
+}
+
+.footer-media ul {
+  display: flex;
+  gap: 16px;
+  
+}
+
+footer .footer-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 204px;
+  position: absolute;
+  top: 100px;
+  right: 692px;
+}
+
+footer {
+  position: relative;
 }
